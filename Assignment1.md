@@ -4,7 +4,8 @@ Assignment 1
 
 
 
-Ans.
+Ans 1.
+
 
 Base case : (n = 2)
 
@@ -13,10 +14,13 @@ Base case : (n = 2)
 Thus, T(2) = 2 log 2
 
 
+
 Assume T(n) = n log n is true if n = 2<sup>k</sup> for some integer k > 0
 
 
+
 Induction Step:
+
 
 If n = 2<sup>k+1</sup>, then
 
@@ -37,39 +41,41 @@ Hence proved by induction.
 
 
 
-Ans.
+
+
+Ans 2.
 
 
 
-Ans.
-	f(n) = 1 + 2 + 4 + … + 2n
 
-	This is an infinite geometric progression, and the summation is:
-
-	f(n) = ∑i = 0i = n  2i
-
-	Therefore, f(n) = 1(2n+1 -1) / (2 - 1) = 2n+1 - 1
-	
-	If we consider g(n) = 2n
-	Then f(n) <= c.g(n), c > 0 (ignoring the -1, f(n) = 2n+1, i.e., f(n) = 2.2n and c = 3)
-	So by definition,    f(n)  = O(g(n))
-	         f(n)   = O(2n)
+Ans 3.
 
 
+f(n) = 1 + 2 + 4 + … + 2<sup>n</sup>
 
+This is an infinite geometric progression, and the summation is:
+
+f(n) = ∑ <sub>i = 0</sub> <sup>i = n</sup>  2<sup>i</sup>
+
+Therefore, f(n) = 1(2<sup>n+1</sup> -1) / (2 - 1) = 2<sup>n+1</sup> - 1
+
+If we consider g(n) = 2<sup>n</sup>
+Then f(n) <= c.g(n), c > 0 (ignoring the -1, f(n) = 2<sup>n+1</sup>, i.e., f(n) = 2.2<sup>n</sup> and c = 3)
+So by definition,    f(n)  = O(g(n))
+	 f(n)   = O(2<sup>n</sup>)
 
 
 Ans.
 (1) 
-Considering 999 = 103-1, we find that for k digits in base b we can express numbers up to bk −1.
+Considering 999 = 10<sup>3</sup>-1, we find that for k digits in base b we can express numbers up to b<sup>k</sup> −1.
 
-N = bk - 1
-log b (N + 1) = k
+N = b<sup>k</sup> - 1
+log <sub>b</sub> (N + 1) = k
 
-Or, k = log b (N)
-Now, log b N = (log a N)/(log a b)
+Or, k = log <sub>b</sub> (N)
+Now, log <sub>b</sub> N = (log <sub>a</sub> N)/(log <sub>a</sub> b)
  
-So the size of integer N in base a is the same as its size in base b, times a constant factor log a b. 
+So the size of integer N in base a is the same as its size in base b, times a constant factor log <sup>a</sup> b. 
 
 In big-O notation, the base is irrelevant, therefore, it is O(log N).
 
@@ -108,8 +114,8 @@ For n>1, step 1 again calls for the recursion for n−1 and step 2 runs in Θ(n)
 
 So, we can write the recurrence as:
 
-T(n) = {  Θ(1)               , if n = 1
-              	  T(n−1) + Θ(n), if n > 1
+T(n) = {  Θ(1)         , if n = 1
+          T(n−1) + Θ(n), if n > 1
 
 Let us assume that for n=1, T(n) = c1, where c1 is some constant. 
 And on average for n > 1, inserting an element in its proper position in a sorted array requires shifting half of the elements, i.e. c2n/2+c3 time (c2n/2 for shifting the elements and c3 for inserting the element).
