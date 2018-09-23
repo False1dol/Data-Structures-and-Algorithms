@@ -93,11 +93,10 @@ The height of the tree is (lg n), each level adds up to (2in + 21-i) and there a
 leaves. We get
 
 	
-Using substitution method, we guess: T(n) <= cn2 + 2n:
-
-	T(n) <= 4c(n/2)2 + 2n/2 + n
-	        <= cn2 + 2n
-	          = Θ(n2)
+Using substitution method, we guess: T(n) <= cn<sup>2</sup> + 2n:
+T(n) <= 4c(n/2)<sup>2</sup> + 2n/2 + n
+     <= cn<sup>2</sup> + 2n
+      = Θ(n<sup>2</sup>)
 
 
 
