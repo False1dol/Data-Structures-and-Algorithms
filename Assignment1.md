@@ -7,36 +7,36 @@ Assignment 1
 Ans 1.
 
 
-Base case : (n = 2)
-
-=> T(2) = 2 and 2 log 2 = 2
-
-Thus, T(2) = 2 log 2
-
-
-
-Assume T(n) = n log n is true if n = 2<sup>k</sup> for some integer k > 0
-
-
-
-Induction Step:
-
-
-If n = 2<sup>k+1</sup>, then
-
-T(2<sup>k+1</sup>)
-
-= 2T(2<sup>k+1</sup> / 2) + 2<sup>k+1</sup> 
-
-= 2T(2<sup>k</sup> ) + 2<sup>k+1 </sup>
-
-= 2(2<sup>k</sup> log 2<sup>k</sup>) + 2<sup>k+1</sup>
-
-= 2<sup>k+1</sup>(log 2<sup>k + 1</sup>)
-
-= 2<sup>k+1</sup> log 2<sup>k+1</sup>
-
-Hence proved by induction.
+>Base case : (n = 2)
+>
+>=> T(2) = 2 and 2 log 2 = 2
+>
+>Thus, T(2) = 2 log 2
+>
+>
+>
+>Assume T(n) = n log n is true if n = 2<sup>k</sup> for some integer k > 0
+>
+>
+>
+>Induction Step:
+>
+>
+>If n = 2<sup>k+1</sup>, then
+>
+>T(2<sup>k+1</sup>)
+>
+>= 2T(2<sup>k+1</sup> / 2) + 2<sup>k+1</sup> 
+>
+>= 2T(2<sup>k</sup> ) + 2<sup>k+1 </sup>
+>
+>= 2(2<sup>k</sup> log 2<sup>k</sup>) + 2<sup>k+1</sup>
+>
+>= 2<sup>k+1</sup>(log 2<sup>k + 1</sup>)
+>
+>= 2<sup>k+1</sup> log 2<sup>k+1</sup>
+>
+>Hence proved by induction.
 
 
 
