@@ -123,8 +123,8 @@ And on average for n > 1, inserting an element in its proper position in a sorte
 
 So, we can rewrite the recurrence as:
 
-T(n) = {          c<sub>1</sub>                       , if n = 1
- T(n−1) + c<sub>2</sub>(n−1)/2 + c<sub>3</sub>, if n > 1
+T(n) = {c<sub>1</sub>                                , if n = 1
+        T(n−1) + c<sub>2</sub>(n−1)/2 + c<sub>3</sub>, if n > 1
 
 So for any general n > 1,
 
