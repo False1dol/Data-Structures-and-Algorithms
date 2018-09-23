@@ -88,6 +88,13 @@ Ans 4.
 
 >   The height of the tree is (lg n), each level adds up to (2<sup>i</sup>n + 2<sup>1-i</sup>) and there are 4<sup>lg n</sup> = n<sup>2</sup>  
 >   leaves. We get  
+>   T(n) = <sup>lg(n-1)</sup>∑<sup>i=0</sup> (2<sup>i</sup>n + 2<sup>1-i</sup>) + Θ(n<sup>2</sup>)  
+>        = <sup>lg(n-1)</sup>∑<sup>i=0</sup> 2<sup>i</sup>n + <sup>lg(n-1)</sup>∑<sup>i=0</sup> 2<sup>1-i</sup> + Θ(n<sup>2</sup>)  
+>        = (2<sup>lgn</sup>-1)/(2-1) + 2. <sup>lg(n-1)</sup>∑<sup>i=0</sup>(½)<sup>i</sup> + Θ(n<sup>2</sup>)  
+>       <= n -1 + 2. <sup>∞</sup>∑<sup>i=0</sup>(½)<sup>i</sup> + Θ(n<sup>2</sup>)  
+>        = n - 1 + 2. ( 1/ (1 - (½)) ) + Θ(n<sup>2</sup>)  
+>        = Θ(n<sup>2</sup>) + n + 3  
+>        = Θ(n<sup>2</sup>)  
 >
 >	
 >   Using substitution method, we guess: T(n) <= cn<sup>2</sup> + 2n:  
