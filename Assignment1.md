@@ -78,10 +78,10 @@ Ans 3 Part (1).
 Ans 3 Part (2).
 
 >   While n > 1:
->      Print “hello”   ----------------- O (1)
->      N := n/2        ----------------- O (lg (n))
->   F(n) = n (O(1) + O(lg (n))
->        = O(n lg(n))
+>      Print “hello”   ----------------- O (1)  
+>      N := n/2        ----------------- O (lg (n))  
+>   F(n) = n (O(1) + O(lg (n))  
+>        = O(n lg(n))  
 
 
 Ans 4.
@@ -111,16 +111,16 @@ Ans 5.
 >
 >   So, we can write the recurrence as:
 >
->   T(n) = {  Θ(1)         , if n = 1
->             T(n−1) + Θ(n), if n > 1
+>   T(n) = {  Θ(1)         , if n = 1  
+>             T(n−1) + Θ(n), if n > 1  
 >
 >   Let us assume that for n=1, T(n) = c<sub>1</sub>, where c<sub>1</sub> is some constant. 
 >   And on average for n > 1, inserting an element in its proper position in a sorted array requires shifting half of the elements, i.e. >   c<sub>2</sub>n/2 + c<sub>3</sub> time (c<sub>2</sub>n/2 for shifting the elements and c<sub>3</sub> for inserting the element).
 >
 >   So, we can rewrite the recurrence as:
 >
->   T(n) = {c<sub>1</sub>                                , if n = 1
->           T(n−1) + c<sub>2</sub>(n−1)/2 + c<sub>3</sub>, if n > 1
+>   T(n) = {c<sub>1</sub>                                , if n = 1  
+>           T(n−1) + c<sub>2</sub>(n−1)/2 + c<sub>3</sub>, if n > 1  
 >
 >   So for any general n > 1,
 >
