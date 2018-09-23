@@ -4,7 +4,7 @@ Assignment 1
 
 
 
-Ans.
+Ans. <sup TEST </sup>
 
 	Base case : (n = 2)
 
@@ -18,7 +18,7 @@ Ans.
 	
 	Induction Step:
 
-		If n = 2<sup>k+1</sup>, then
+		If n = 2k+1, then
 
 		T(2k+1)
 
