@@ -133,7 +133,57 @@ Ans 5.
 
 
 
-Ans 6.
->
->
->
+Ans 6 (a)
+a = 2, b = 2, f(n) = n<sup>4</sup>
+n<sup>log<sub>b</sub> a</sup> = n<sup>1</sup>
+Case 3: f(n) = ꭥ (n<sup>1 + 3</sup>) for 𝞮 = 3
+And 2(cn/2)<sup>4</sup> <= cn<sup>4</sup> for c < 1/2
+Therefore, T(n) = Θ(n<sup>4</sup>)
+
+Ans 6 (b)	
+a = 1, b = 10/7, f(n) = n
+n<sup>log<sub>b</sub> a</sup> = n<sup>0</sup>
+Therefore, T(n) = Θ(n)
+
+Ans 6 (c) 	
+a = 16, b = 4, f(n) = n<sup>2</sup>
+n<sup>log<sub>b</sub> a</sup> = n<sup>2</sup>
+Case 2: f(n) = Θ(n<sup>2</sup>)
+Therefore, T(n) = Θ(n<sup>2</sup>lgn)
+
+Ans (d)	
+a = 2, b = 4, f(n) = n<sup>1/2</sup>
+n<sup>log<sub>b</sub> a</sup> = n<sup>1/2</sup>
+Case 2: f(n) = Θ(n<sup>1/2</sup>)
+Therefore, T(n) = Θ(n<sup>1/2</sup>lgn)
+
+Ans (e)	
+a = 2<sup>1/2</sup>, b = 2, f(n) = lgn
+n<sup>log<sub>b</sub> a</sup> = n<sup>1/2</sup>
+Now, n<sup>1/2</sup> grows faster than f(n) = lgn
+Therefore, by case (1), T(n) = Θ(n<sup>1/2</sup>)
+
+Ans (f)	
+a = 64, b = 8, f(n) = -n<sup>2</sup>lgn
+Under Master theorem's conditions, f(n) has to be a positive value. Hence, it’s not applicable here.
+
+Ans (g)	
+a = 2, b = 4, f(n) = n<sup>0.51</sup>
+n<sup>log<sub>b</sub> a</sup> = n<sup>1/2</sup> = n<sup>0.5</sup>
+Case 3: f(n) ꭥ (n<sup>0.5 + 0.01</sup>), for 𝞮 = 0.01
+And 2(cn/4)<sup>0.51</sup> <= cn<sup>0.51</sup> for c < (2 * (¼)<sup>0.51</sup>)<sup>1/0.49</sup>
+Therefore, T(n) = Θ(n<sup>0.51</sup>)
+
+Ans (h)	
+a = 16, b = 4, f(n) = n!
+n<sup>log<sub>b</sub> a</sup> = n<sup>2</sup>
+Now, n! grows faster than n<sup>2</sup>,
+Therefore, by case (3), T(n) = Θ(n!)
+
+Ans (i)	
+a = ½, b = 2, f(n) = ½
+Under Master theorem's conditions, a always has to be > 1. Hence, it’s not applicable here.
+
+Ans (j)	a = 2<sup>n</sup>, b = 2, f(n) = n<sup>n</sup>
+Under Master theorem's conditions, a has to be a constant. Hence, it’s not applicable here.
+
