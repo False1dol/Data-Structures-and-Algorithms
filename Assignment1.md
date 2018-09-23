@@ -6,7 +6,7 @@ Assignment 1
 ![alt text](https://github.com/MrReese0/SER501-AdvDSA/blob/master/images/A1Q1.png)  
   
   
-Ans 1.
+Ans.
   
   
 >   Base case : (n = 2)  
@@ -44,7 +44,7 @@ Ans 1.
 ![alt text](https://github.com/MrReese0/SER501-AdvDSA/blob/master/images/A1Q2P2.png)  
   
   
-Ans 2 Part A.  
+Ans. 
 >
 >
 >
@@ -52,7 +52,7 @@ Ans 2 Part A.
 ![alt text](https://github.com/MrReese0/SER501-AdvDSA/blob/master/images/A1Q2P3.png)  
   
   
-Ans 2 Part B.  
+Ans. 
   
   
 >   f(n) = 1 + 2 + 4 + … + 2<sup>n</sup>  
@@ -98,7 +98,7 @@ Ans 3 Part (2).
 ![alt text](https://github.com/MrReese0/SER501-AdvDSA/blob/master/images/A1Q4.png)  
 
 
-Ans 4.  
+Ans
   
 >   ![alt text](https://github.com/MrReese0/SER501-AdvDSA/blob/master/images/Tree.png)  
 >   The height of the tree is (lg n), each level adds up to (2<sup>i</sup>n + 2<sup>1-i</sup>) and there are 4<sup>lg n</sup> = n<sup>2</sup>  
@@ -121,7 +121,7 @@ Ans 4.
 ![alt text](https://github.com/MrReese0/SER501-AdvDSA/blob/master/images/A1Q5.png)  
   
     
-Ans 5.  
+Ans. 
   
   
 >   There are two steps in this recursive sorting algorithm:  
