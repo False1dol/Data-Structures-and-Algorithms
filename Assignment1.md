@@ -86,7 +86,7 @@ Ans 3 Part (2).
 
 Ans 4.
 
->   The height of the tree is (lg n), each level adds up to (2<sup>i</sup>n + 2<sup>1-i<sup>) and there are 4<sup>lg n</sup> = n<sup>2</sup>  
+>   The height of the tree is (lg n), each level adds up to (2<sup>i</sup>n + 2<sup>1-i</sup>) and there are 4<sup>lg n</sup> = n<sup>2</sup>  
 >   leaves. We get  
 >
 >	
