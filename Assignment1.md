@@ -4,7 +4,7 @@ Assignment 1
 
 
 
-Ans. <sup TEST </sup>
+Ans. <sup> TEST </sup>
 
 	Base case : (n = 2)
 
