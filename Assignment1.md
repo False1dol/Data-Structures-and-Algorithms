@@ -9,9 +9,9 @@ Ans 1.
 
 >Base case : (n = 2)
 >
->=> T(2) = 2 and 2 log 2 = 2
+>   => T(2) = 2 and 2 log 2 = 2
 >
->Thus, T(2) = 2 log 2
+>   Thus, T(2) = 2 log 2
 >
 >
 >
@@ -22,21 +22,21 @@ Ans 1.
 >Induction Step:
 >
 >
->If n = 2<sup>k+1</sup>, then
+>   If n = 2<sup>k+1</sup>, then
 >
->T(2<sup>k+1</sup>)
+>   T(2<sup>k+1</sup>)
 >
->= 2T(2<sup>k+1</sup> / 2) + 2<sup>k+1</sup> 
+>   = 2T(2<sup>k+1</sup> / 2) + 2<sup>k+1</sup> 
 >
->= 2T(2<sup>k</sup> ) + 2<sup>k+1 </sup>
+>   = 2T(2<sup>k</sup> ) + 2<sup>k+1 </sup>
 >
->= 2(2<sup>k</sup> log 2<sup>k</sup>) + 2<sup>k+1</sup>
+>   = 2(2<sup>k</sup> log 2<sup>k</sup>) + 2<sup>k+1</sup>
 >
->= 2<sup>k+1</sup>(log 2<sup>k + 1</sup>)
+>   = 2<sup>k+1</sup>(log 2<sup>k + 1</sup>)
 >
->= 2<sup>k+1</sup> log 2<sup>k+1</sup>
+>   = 2<sup>k+1</sup> log 2<sup>k+1</sup>
 >
->Hence proved by induction.
+>   	Hence proved by induction.
 
 
 
