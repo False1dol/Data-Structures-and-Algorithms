@@ -51,7 +51,7 @@ Ans 2 Part B.
 >
 >   This is an infinite geometric progression, and the summation is:  
 >
->   f(n) = ∑ <sub>i = 0</sub> <sup>i = n</sup>  2<sup>i</sup>  
+>   f(n) = <sup>i = n</sup>∑<sub>i = 0</sub>   2<sup>i</sup>  
 >
 >   Therefore, f(n) = 1(2<sup>n+1</sup> -1) / (2 - 1) = 2<sup>n+1</sup> - 1  
 >
@@ -86,7 +86,7 @@ Ans 3 Part (2).
 
 Ans 4.
 
->   The height of the tree is (lg n), each level adds up to (2in + 21-i) and there are 4lg n = n2  
+>   The height of the tree is (lg n), each level adds up to (2<sup>i</sup>n + 2<sup>1-i<sup>) and there are 4<sup>lg n</sup> = n<sup>2</sup>  
 >   leaves. We get  
 >
 >	
