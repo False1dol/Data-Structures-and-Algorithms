@@ -86,6 +86,7 @@ Ans 3 Part (2).
 
 Ans 4.
 
+>![alt text](https://github.com/MrReese0/SER501-AdvDSA/blob/master/images/Tree.png)
 >   The height of the tree is (lg n), each level adds up to (2<sup>i</sup>n + 2<sup>1-i</sup>) and there are 4<sup>lg n</sup> = n<sup>2</sup>  
 >   leaves. We get  
 >   T(n) = <sup>lg(n-1)</sup>∑<sup>i=0</sup> (2<sup>i</sup>n + 2<sup>1-i</sup>) + Θ(n<sup>2</sup>)  
