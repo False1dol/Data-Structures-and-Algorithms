@@ -4,35 +4,35 @@ Assignment 1
 
 
 
-Ans. <sup> TEST </sup>
+Ans.
 
-	Base case : (n = 2)
+Base case : (n = 2)
 
-		=> T(2) = 2 and 2 log 2 = 2
+=> T(2) = 2 and 2 log 2 = 2
 
-		Thus, T(2) = 2 log 2
+Thus, T(2) = 2 log 2
 
 
-	Assume T(n) = n log n is true if n = 2k for some integer k > 0
+Assume T(n) = n log n is true if n = 2<sup>k</sup> for some integer k > 0
 
-	
-	Induction Step:
 
-		If n = 2k+1, then
+Induction Step:
 
-		T(2k+1)
+If n = 2<sup>k+1</sup>, then
 
-		= 2T(2k+1 / 2) + 2k+1 
+T(2<sup>k+1</sup>)
 
-		= 2T(2k ) + 2k+1 
+= 2T(2<sup>k+1</sup> / 2) + 2<sup>k+1</sup> 
 
-		= 2(2k log 2k) + 2k+1
+= 2T(2<sup>k</sup> ) + 2<sup>k+1 </sup>
 
-		= 2k+1(log 2k + 1)
+= 2(2<sup>k</sup> log 2<sup>k</sup>) + 2<sup>k+1</sup>
 
-		= 2k+1 log 2k+1
-		
-	Hence proved by induction.
+= 2<sup>k+1</sup>(log 2<sup>k + 1</sup>)
+
+= 2<sup>k+1</sup> log 2<sup>k+1</sup>
+
+Hence proved by induction.
 
 
 
