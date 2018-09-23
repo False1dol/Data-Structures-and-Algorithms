@@ -75,16 +75,16 @@ log <sub>b</sub> (N + 1) = k
 Or, k = log <sub>b</sub> (N)
 Now, log <sub>b</sub> N = (log <sub>a</sub> N)/(log <sub>a</sub> b)
  
-So the size of integer N in base a is the same as its size in base b, times a constant factor log <sup>a</sup> b. 
+So the size of integer N in base a is the same as its size in base b, times a constant factor log <sub>a</sub> b. 
 
 In big-O notation, the base is irrelevant, therefore, it is O(log N).
 
 (2)
-	While n > 1:
-		Print “hello”   ----------------- O (1)
-		N := n/2        ----------------- O (lg (n))
-	F(n) = n (O(1) + O(lg (n))
-	        = O(n lg(n))
+While n > 1:
+	Print “hello”   ----------------- O (1)
+	N := n/2        ----------------- O (lg (n))
+F(n) = n (O(1) + O(lg (n))
+     = O(n lg(n))
 
 
 Ans.
