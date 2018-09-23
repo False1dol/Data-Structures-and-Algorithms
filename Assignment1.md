@@ -43,12 +43,12 @@ Hence proved by induction.
 
 
 
-Ans 2.
+Ans 2 Part A.
 
 
 
 
-Ans 3.
+Ans 2 Part B.
 
 
 f(n) = 1 + 2 + 4 + … + 2<sup>n</sup>
@@ -65,8 +65,8 @@ So by definition,    f(n)  = O(g(n))
 	 f(n)   = O(2<sup>n</sup>)
 
 
-Ans.
-(1) 
+Ans 3 Part (1).
+
 Considering 999 = 10<sup>3</sup>-1, we find that for k digits in base b we can express numbers up to b<sup>k</sup> −1.
 
 N = b<sup>k</sup> - 1
@@ -79,7 +79,7 @@ So the size of integer N in base a is the same as its size in base b, times a co
 
 In big-O notation, the base is irrelevant, therefore, it is O(log N).
 
-(2)
+Ans 3 Part (2).
 While n > 1:
 	Print “hello”   ----------------- O (1)
 	N := n/2        ----------------- O (lg (n))
@@ -87,7 +87,7 @@ F(n) = n (O(1) + O(lg (n))
      = O(n lg(n))
 
 
-Ans.
+Ans 4.
 
 The height of the tree is (lg n), each level adds up to (2in + 21-i) and there are 4lg n = n2 
 leaves. We get
@@ -102,8 +102,9 @@ Using substitution method, we guess: T(n) <= cn2 + 2n:
 
 
 
-Ans.
-	There are two steps in this recursive sorting algorithm:
+Ans 5.
+
+There are two steps in this recursive sorting algorithm:
 
 Sort the sub-array A[1..n−1]
 Insert A[n] into the sorted subarray from step 1 in proper position
@@ -117,25 +118,25 @@ So, we can write the recurrence as:
 T(n) = {  Θ(1)         , if n = 1
           T(n−1) + Θ(n), if n > 1
 
-Let us assume that for n=1, T(n) = c1, where c1 is some constant. 
-And on average for n > 1, inserting an element in its proper position in a sorted array requires shifting half of the elements, i.e. c2n/2+c3 time (c2n/2 for shifting the elements and c3 for inserting the element).
+Let us assume that for n=1, T(n) = c<sub>1</sub>, where c<sub>1</sub> is some constant. 
+And on average for n > 1, inserting an element in its proper position in a sorted array requires shifting half of the elements, i.e. c<sub>2</sub>n/2 + c<sub>3</sub> time (c<sub>2</sub>n/2 for shifting the elements and c<sub>3</sub> for inserting the element).
 
 So, we can rewrite the recurrence as:
 
-T(n) = {          c1                        , if n = 1
- T(n−1) + c2(n−1)/2 + c3, if n > 1
+T(n) = {          c<sub>1</sub>                       , if n = 1
+ T(n−1) + c<sub>2</sub>(n−1)/2 + c<sub>3</sub>, if n > 1
 
 So for any general n > 1,
 
-T(n) = T(n−1) + c2(n−1)/2 + c3
-= T(n−2) + c2(n−2)/2 + c3 + {c2(n−1)/2 + c3}
-= T(1) + ⋅⋅⋅ + {c2(n−2)/2 + c3} + {c2(n−1)/2 + c3}
-= c1 + c2/2⋅{1+2+⋅⋅⋅+(n−1)} + c3(n−1)
-= c1 + c2/2⋅n(n−1)/2 + c3(n−1)
+T(n) = T(n−1) + c<sub>2</sub>(n−1)/2 + c<sub>3</sub>
+= T(n−2) + c<sub>2</sub>(n−2)/2 + c<sub>3</sub> + {c<sub>2</sub>(n−1)/2 + c<sub>3</sub>}
+= T(1) + ⋅⋅⋅ + {c<sub>2</sub>(n−2)/2 + c<sub>3</sub>} + {c<sub>2</sub>(n−1)/2 + c<sub>3</sub>}
+= c<sub>1</sub> + c<sub>2</sub>/2⋅{1+2+⋅⋅⋅+(n−1)} + c<sub>3</sub>(n−1)
+= c<sub>1</sub> + c<sub>2</sub>/2⋅n(n−1)/2 + c<sub>3</sub>(n−1)
 = Θ(n2)
 
 
 
-Ans.
+Ans 6.
 
 
