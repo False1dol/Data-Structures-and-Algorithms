@@ -55,10 +55,10 @@ Ans 2 Part B.
 >
 >   Therefore, f(n) = 1(2<sup>n+1</sup> -1) / (2 - 1) = 2<sup>n+1</sup> - 1
 >
->   If we consider       g(n) = 2<sup>n</sup>
->                   Then f(n) <= c.g(n), c > 0 (ignoring the -1, f(n) = 2<sup>n+1</sup>, i.e., f(n) = 2.2<sup>n</sup> and c = 3)
->   So by definition,    f(n)  = O(g(n))
->                        f(n)   = O(2<sup>n</sup>)
+>   If we consider       g(n) = 2<sup>n</sup>  
+>                   Then f(n) <= c.g(n), c > 0 (ignoring the -1, f(n) = 2<sup>n+1</sup>, i.e., f(n) = 2.2<sup>n</sup> and c = 3)  
+>   So by definition,    f(n)  = O(g(n))  
+>                        f(n)   = O(2<sup>n</sup>)  
 
 
 Ans 3 Part (1).
@@ -90,10 +90,10 @@ Ans 4.
 >   leaves. We get
 >
 >	
->   Using substitution method, we guess: T(n) <= cn<sup>2</sup> + 2n:
->      T(n) <= 4c(n/2)<sup>2</sup> + 2n/2 + n
->           <= cn<sup>2</sup> + 2n
->            = Θ(n<sup>2</sup>)
+>   Using substitution method, we guess: T(n) <= cn<sup>2</sup> + 2n:  
+>      T(n) <= 4c(n/2)<sup>2</sup> + 2n/2 + n  
+>           <= cn<sup>2</sup> + 2n  
+>            = Θ(n<sup>2</sup>)  
 
 
 
@@ -124,12 +124,12 @@ Ans 5.
 >
 >   So for any general n > 1,
 >
->   T(n) = T(n−1) + c<sub>2</sub>(n−1)/2 + c<sub>3</sub>
->        = T(n−2) + c<sub>2</sub>(n−2)/2 + c<sub>3</sub> + {c<sub>2</sub>(n−1)/2 + c<sub>3</sub>}
->        = T(1) + ⋅⋅⋅ + {c<sub>2</sub>(n−2)/2 + c<sub>3</sub>} + {c<sub>2</sub>(n−1)/2 + c<sub>3</sub>}
->        = c<sub>1</sub> + c<sub>2</sub>/2⋅{1+2+⋅⋅⋅+(n−1)} + c<sub>3</sub>(n−1)
->        = c<sub>1</sub> + c<sub>2</sub>/2⋅n(n−1)/2 + c<sub>3</sub>(n−1)
->        = Θ(n<sup>2</sup>)
+>   T(n) = T(n−1) + c<sub>2</sub>(n−1)/2 + c<sub>3</sub>  
+>        = T(n−2) + c<sub>2</sub>(n−2)/2 + c<sub>3</sub> + {c<sub>2</sub>(n−1)/2 + c<sub>3</sub>}  
+>        = T(1) + ⋅⋅⋅ + {c<sub>2</sub>(n−2)/2 + c<sub>3</sub>} + {c<sub>2</sub>(n−1)/2 + c<sub>3</sub>}  
+>        = c<sub>1</sub> + c<sub>2</sub>/2⋅{1+2+⋅⋅⋅+(n−1)} + c<sub>3</sub>(n−1)  
+>        = c<sub>1</sub> + c<sub>2</sub>/2⋅n(n−1)/2 + c<sub>3</sub>(n−1)  
+>        = Θ(n<sup>2</sup>)  
 
 
 
