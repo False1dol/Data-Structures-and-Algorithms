@@ -88,11 +88,11 @@ Ans 3 Part (1).
   
 Ans 3 Part (2).  
   
->   While n > 1:  
+>   While n > 1:  lg n
 >      Print “hello”   ----------------- O (1)  
->      N := n/2        ----------------- O (lg (n))  
->   F(n) = n (O(1) + O(lg (n))  
->        = O(n lg(n))  
+>      N := n/2        ----------------- O (1)  
+>   F(n) = lg (n).(O(1) + O(1))  
+>        = O(lg n)  
   
   
 ![alt text](https://github.com/MrReese0/SER501-AdvDSA/blob/master/images/A1Q4.png)  
