@@ -221,7 +221,7 @@ Ans 6 (h)
 Ans 6 (i)	
   
 >   a = ½, b = 2, f(n) = ½  
->   Under Master theorem's conditions, a always has to be > 1. Hence, it’s not applicable here.  
+>   Under Master theorem's conditions, a always has to be >= 1. Hence, it’s not applicable here.  
   
 Ans 6 (j)	
 
