@@ -44,10 +44,33 @@ Ans.
 ![alt text](https://github.com/MrReese0/SER501-AdvDSA/blob/master/images/A1Q2P2.png)  
   
   
-Ans. 
->
->
->
+Ans 2. A. Part (1).  
+  
+>    N<sup>3</sup> + 3<sup>n</sup> = O(3<sup>n</sup>)  
+  
+  
+Ans 2. A. Part (2).  
+  
+>    3n log 5n = 3n log 5 + 3n log n = O(n log n)  
+  
+  
+Ans 2. A. Part (3).  
+  
+>    100 * 2<sup>n</sup> * 3<sup>n</sup> = O(3<sup>n</sup>)  
+  
+  
+Ans 2. A. Part (4).
+  
+>    80n log n + 5n<sup>3</sup> + n<sup>1/2</sup> = O(3<sup>n</sup>)  
+  
+  
+Ans. 2. A. Part (5).
+  
+>    1<sup>3</sup> + 2<sup>3</sup> + ... + n<sup>3</sup> = (n * (n + 1)/2)<sup>2</sup> = n<sup>2</sup> * (n<sup>2</sup> + 2n + 1)/4
+>                                          = n<sup>4</sup>/4 + n<sup>3</sup>/2 + n<sup>2</sup>/4
+>                                          = O(n<sup>4</sup>)  
+  
+  
   
 ![alt text](https://github.com/MrReese0/SER501-AdvDSA/blob/master/images/A1Q2P3.png)  
   
@@ -164,13 +187,15 @@ Ans 6 (a)
 >   a = 2, b = 2, f(n) = n<sup>4</sup>  
 >   n<sup>log<sub>b</sub> a</sup> = n<sup>1</sup>  
 >   Case 3: f(n) = ꭥ (n<sup>1 + 3</sup>) for 𝞮 = 3  
->   And 2(cn/2)<sup>4</sup> <= cn<sup>4</sup> for c < 1/2  
+>   And 2(n/2)<sup>4</sup> <= cn<sup>4</sup> for 1/8 >= c > 1
 >   Therefore, T(n) = Θ(n<sup>4</sup>)  
   
 Ans 6 (b)	 
   
 >   a = 1, b = 10/7, f(n) = n  
 >   n<sup>log<sub>b</sub> a</sup> = n<sup>0</sup>  
+>   Case 3: f(n) = ꭥ (n<sup>0 + 1</sup>) for 𝞮 = 1  
+>   And 1(7n/10) <= cn<sup></sup> for 7/10 <= c < 1
 >   Therefore, T(n) = Θ(n)  
   
 Ans 6 (c) 	
@@ -197,14 +222,13 @@ Ans 6 (e)
 Ans 6 (f)	
   
 >   a = 64, b = 8, f(n) = -n<sup>2</sup>lgn  
->   Under Master theorem's conditions, f(n) has to be a positive value. Hence, it’s not applicable here.  
+>   Under Master theorem's conditions, f(n) has to be a asymptotically positive function. Hence, it’s not applicable here.  
   
 Ans 6 (g)	
   
 >   a = 2, b = 4, f(n) = n<sup>0.51</sup>  
 >   n<sup>log<sub>b</sub> a</sup> = n<sup>1/2</sup> = n<sup>0.5</sup>  
 >   Case 3: f(n) ꭥ (n<sup>0.5 + 0.01</sup>), for 𝞮 = 0.01  
->   And 2(cn/4)<sup>0.51</sup> <= cn<sup>0.51</sup> for c < (2 * (¼)<sup>0.51</sup>)<sup>1/0.49</sup>  
 >   Therefore, T(n) = Θ(n<sup>0.51</sup>)  
   
   
